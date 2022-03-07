@@ -176,3 +176,51 @@
   padding-top: 28px;
   padding-bottom: 28px;
 }
+
+/* modal */
+
+.modal_container_custom .modal-content {
+  background-color: var(--header-bg);
+  border-radius: 10px;
+}
+
+.mymodal_header div {
+  flex: 1 !important;
+  font-weight: bold;
+}
+
+.mymodal_header button {
+  margin: 0px !important;
+  order: -1;
+  background-color: var(--btn-bg-white) !important;
+  padding: 14px !important;
+  border-radius: 50%;
+}
+
+.bracket_expressions_container {
+  padding: 4px;
+  background-color: var(--btn-bg-white);
+  border-radius: 10px;
+}
+
+.bracket_expressions_container .title {
+  padding: 10px 0px 10px 10px;
+  font-weight: bold;
+}
+
+.bracket_expressions_container .expression {
+  background-color: #dfdfdf;
+  padding: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+.bracket_expressions_container .description {
+  background-color: #dfdfdf;
+  padding: 10px;
+}
+
+.bracket_expressions_container .odd {
+  background-color: #e7e7e7;
+}

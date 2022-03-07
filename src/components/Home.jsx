@@ -1,15 +1,17 @@
 import React from 'react'
 import { Form } from 'react-bootstrap'
 import './Home.css'
+import Modal from './Modal'
 
 const Home = () => {
   return (
     <main className="main">
+      {/* <Modal /> */}
       <div className="container ">
         <div className="header">
           <div className="btns-container">
             <div className="left-btns">
-              <button className="reference-sheet btn">Reference Sheet</button>
+              <Modal />
             </div>
             <div className="middle-btns">
               <h3 className="patterns-heading text-center">PATTERNS</h3>
