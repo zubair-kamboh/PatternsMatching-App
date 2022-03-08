@@ -62,7 +62,7 @@
   font-weight: 600;
   padding: 12px 18px;
   /* margin-right: 3px; */
-  border-right: 2px solid white;
+  border-right: 1px solid white;
 
   color: var(--btn-grey-text);
 }
