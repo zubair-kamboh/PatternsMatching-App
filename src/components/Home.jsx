@@ -87,7 +87,7 @@ const Home = () => {
               compute to values.&lt;/p&gt; &lt;p id=“demo”&gt;&lt;/p&gt;
               &lt;script&gt; &lt;/script&gt;
               <br />
-              document.getElementById(“demo”).innerHTML = 5 *
+              document.getElementById(“demo”) <br /> .innerHTML = 5 *
               10&gt;&lt;/script&gt;
             </div>
           </div>
@@ -146,8 +146,8 @@ const Home = () => {
                     &lt;p&gt;Expressions compute to values.&lt;/p&gt; &lt;p
                     id=“demo”&gt;&lt;/p&gt; &lt;script&gt; &lt;/script&gt;
                     <br />
-                    document.getElementById(“demo”).innerHTML = 5 *
-                    10&gt;&lt;/script&gt;
+                    document.getElementById(“demo”) <br />
+                    .innerHTML = 5 * 10&gt;&lt;/script&gt;
                   </details>
                 </div>
               </div>

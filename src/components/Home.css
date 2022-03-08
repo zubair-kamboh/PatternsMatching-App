@@ -259,3 +259,34 @@
 .bracket_expressions_container .odd {
   background-color: #e7e7e7;
 }
+
+@media (max-width: 900px) {
+  .btns-container {
+    flex-wrap: wrap;
+    position: relative;
+  }
+
+  .right-btns {
+    margin-top: 20px;
+  }
+
+  .middle-btns,
+  .left-btns {
+    margin-top: 50px;
+  }
+
+  .patterns-heading {
+    position: absolute;
+    top: 0%;
+    left: 50%;
+
+    transform: translate(-50%, -0%);
+  }
+
+  .regular-expression-container .heading {
+    /* flex-wrap: wrap; */
+    flex-direction: column;
+  }
+}
+@media (max-width: 600px) {
+}
