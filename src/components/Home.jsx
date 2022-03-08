@@ -1,9 +1,11 @@
-import React from 'react'
+import React, { useState } from 'react'
 import { Form } from 'react-bootstrap'
 import './Home.css'
 import Modal from './Modal'
 
 const Home = () => {
+  const [whiteBg, setWhiteBg] = useState('match')
+
   return (
     <main className="main">
       {/* <Modal /> */}
@@ -16,14 +18,32 @@ const Home = () => {
             <div className="middle-btns">
               <h3 className="patterns-heading text-center">PATTERNS</h3>
               <div className="btns">
-                <button className="middle-btn btn">Match</button>
-                <button className="middle-btn btn">Replace</button>
-                <button className="middle-btn btn">Filter</button>
+                <button
+                  className="middle-btn btn"
+                  id={whiteBg === 'match' ? 'white_bg' : ''}
+                  onClick={() => setWhiteBg('match')}
+                >
+                  Match
+                </button>
+                <button
+                  className="middle-btn btn"
+                  onClick={() => setWhiteBg('replace')}
+                  id={whiteBg === 'replace' ? 'white_bg' : ''}
+                >
+                  Replace
+                </button>
+                <button
+                  className="middle-btn btn"
+                  onClick={() => setWhiteBg('filter')}
+                  id={whiteBg === 'filter' ? 'white_bg' : ''}
+                >
+                  Filter
+                </button>
               </div>
             </div>
 
             <div className="right-btns">
-              <select id="swift" name="swift">
+              <select className="swift" name="swift">
                 <option value="volvo">Swift</option>
                 <option value="saab">Saab</option>
                 <option value="fiat">Fiat</option>
@@ -54,7 +74,7 @@ const Home = () => {
                 </Form.Group>
               </Form>
 
-              <select id="swift" name="swift">
+              <select className="swift" name="swift">
                 <option value="volvo">Swift</option>
                 <option value="saab">Saab</option>
                 <option value="fiat">Fiat</option>
